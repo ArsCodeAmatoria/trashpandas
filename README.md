@@ -1,43 +1,55 @@
-# Flower
+# Trash Pandas
 
-A **Next.js** exhibition site for *Flower*—an animated musical adventure set in Flower High, where the whole district grows on the same beat until it can’t.
+**Screenplay by Leigh Akin**
+
+Animated sci-fi adventure / drama. Near-future city, zero-waste order, raccoons caught between a world that wants them gone and a vortex world built from everything the surface throws away. Tone aimed at **family access with older-audience layers**—emotional clarity with philosophical weight.
+
+---
+
+## Logline
+
+When a control-obsessed raccoon discovers a hidden vortex linking Earth to a chaotic world where his kind truly belongs, he must choose between closing it to save both worlds—or staying behind with the one who showed him what survival really means.
+
+---
 
 ## The story
 
-**Logline.** In a perfectly synchronized flower district controlled by a system that forces everyone to “grow right,” a scentless girl whose presence causes the system to malfunction must stop trying to fit in and shut it down—revealing that she was never the problem, but the connection the world had been cut off from.
+Ledger has learned the hard way that chaos kills: he lost his family when unstable trash collapsed around them. Since then he has treated survival as a ledger problem—map the variables, cut the risk, trust systems over instinct. In a city racing toward perfect elimination of waste, raccoons are running out of room. Ledger believes the answer is to adapt harder, hide smarter, and optimize.
 
-Rose has no scent, can’t sync with the Bloom Equalizer, and every attempt to belong makes the machinery strain. She meets Lemon, who moves outside the grid. The district mistakes harmony for control; Rose has to learn that her difference isn’t the bug—it’s what the system has been trained to erase. The spine is locked as a **26-scene / ~100-page** treatment: theme through consequence, not speeches; short dialogue; Rose carries the full arc; the Equalizer stays pressure, not a chatty villain.
+That belief fractures when he finds a breach inside a recycling plant: a vortex to another ecology—messy, alive, built from refuse the city denies. There he meets raccoons who do not live by his rules, especially **Bloom**, who moves with the disorder instead of against it. Ledger’s attempt to *fix* the breach and both worlds forces a confrontation with what he has been protecting himself from—**that adaptability, not total control, is what lets life survive**, and that some choices cost everything.
 
-**Threads the bible keeps pulling on:** connection vs. enforced sameness · natural Bloom vs. the Equalizer · performed identity giving way to embodiment · variation as life, not error.
+At its core, the film asks what happens when a system defines value so narrowly that it throws away the very variation that keeps things living—and what one creature owes the worlds on either side of that line.
 
-**District motion (for writers / boards):** in shared outdoor flow, people drift into curved lanes and staggered rows—more **garden bed** than parade—so shots from height can complete the “bloom” using **paths + habit**, not literal human petal diagrams. Rose’s friction stays **phase and radius** (half-beat, wrong arc), not mass crowd chaos.
+**Thematic threads:** control versus connection · identity and belonging across two worlds · what gets rejected versus what actually sustains life · sacrifice when “saving” both worlds is not painless.
 
-**Comedy guardrails:** laughs come from **Rose vs the machine**, **Daisy’s** kind misfires, **Lemon’s** timing, and **Narcissa’s** dignity under routing pressure—not punching down. **Bluebell** stays a butterfly: **wing geometry, antenna, glow** only—no anthropomorphic face or “character” interiority.
+---
 
-## What’s in this repo
+## Characters
 
-| Area | Purpose |
-|------|---------|
-| **Home** | Project wall—logline, synopsis, tone, theme tags, opening credits experience |
-| **Script** | Full draft reader with Act 1 / 2A / 2B / 3 navigation, scene context, notes, and print-to-PDF export (full draft + per-scene) |
-| **Characters / Sets** | Dossiers and linked story material |
-| **Lyrics / PDFs** | Supplementary exhibition pages; PDFs includes document cards plus per-scene script export links |
+### Ledger — protagonist
 
-## Development
+Analytical, procedural, uncomfortable with ambiguity. He analyzes aloud, favors conditionals and conclusions, corrects imprecision, and goes rigid under stress. His arc pushes him from **order as morality** toward **acting without complete certainty**, and toward accepting unpredictability as part of care.
 
-```bash
-npm install
-npm run dev
-```
+### Bloom — emotional core / truth holder
 
-Open [http://localhost:3000](http://localhost:3000). Production build:
+From the trash world: curiosity and openness as instinct. She does not win arguments against Ledger—she **exists differently**. She speaks in short, grounded observations; she redirects rather than fights. She carries the story’s emotional truth: **what is discarded or unpredictable often holds the key to survival**, and her stakes sharpen the cost of the finale.
 
-```bash
-npm run build && npm start
-```
+### Scraps — chaos / instinct
 
-**Assets.** Place shared media under `public/` (e.g. songs referenced by the credits player).
+Street-smart, fast, anti-planning. He treats Ledger’s need for control as dangerous delay. Dialogue stays fragmentary, slangy, reactive. His arc moves from **pure opposition** toward **trust and counterbalance**—chaos that learns it is not enough alone.
 
-## License / credits
+### Brick — enforcer of order
 
-Private project repository; story and screenplay content belong to the author(s). UI stack: Next.js 14, React 18, Tailwind, Framer Motion.
+A disciplined pit bull aligned with the mandate: clear perimeter, no disruption, no self-doubt. Not sadistic—**efficient**. He is the peak of what Ledger once mistook for strength through control. He is not there to be persuaded—only **outmaneuvered**.
+
+### Rust — discarded / truth of the system
+
+An older pit bull who was useful to the system until he wasn’t. Slow, quiet, resigned without bitterness. He has seen **value and disposal** from the inside. He speaks rarely, in weighted, simple lines—the cost of obedience made flesh.
+
+### Vanta — detached observer / third philosophy
+
+A cat who borrows structure when it serves her and drops it when it does not. She reads Ledger’s control as **fear dressed as logic**. Her arc is not full belonging—it is **choosing to intervene** when detachment would be easier. Dry, precise, observational speech; challenge without performance.
+
+---
+
+*Trash Pandas — screenplay by Leigh Akin. Story and characters as embodied in the script and development materials in this project.*
