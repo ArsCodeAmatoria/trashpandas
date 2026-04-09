@@ -8,6 +8,7 @@ import { Menu } from "lucide-react";
 import { flowerEase } from "@/lib/motion-presets";
 import { cn } from "@/lib/utils";
 import { MobileNavSheet } from "./mobile-nav-sheet";
+import { ThemeToggle } from "./theme-toggle";
 import { SITE_NAV, isSiteNavActive } from "./site-nav";
 
 export type { SiteNavItem } from "./site-nav";
@@ -59,8 +60,23 @@ export function SiteHeader() {
             </nav>
           </div>
 
-          <div className="flex shrink-0 items-center gap-3">
-            <p className="page-label hidden text-[0.6rem] tracking-[0.24em] sm:block">Archive</p>
+          <div className="flex shrink-0 items-center gap-2 sm:gap-3">
+            <Link
+              href="/archive"
+              className={cn(
+                "page-label shrink-0 text-[0.6rem] tracking-[0.24em] transition-subtle",
+                pathname === "/archive" || pathname.startsWith("/archive/")
+                  ? "text-foreground"
+                  : "text-muted-foreground hover:text-foreground/88",
+              )}
+              aria-current={
+                pathname === "/archive" || pathname.startsWith("/archive/") ? "page" : undefined
+              }
+            >
+              Archive
+            </Link>
+
+            <ThemeToggle />
 
             <button
               type="button"

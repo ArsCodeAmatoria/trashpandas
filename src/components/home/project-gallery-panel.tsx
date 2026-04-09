@@ -16,7 +16,7 @@ export function ProjectGalleryPanel({ project: p, className }: ProjectGalleryPan
     <div className={cn("wall-caption-card", className)}>
       <div className="space-y-8">
         <header className="space-y-3 border-b border-border/30 pb-6">
-          <h1 className="font-display text-2xl font-medium tracking-tight text-foreground md:text-3xl">
+          <h1 className="font-logo text-2xl font-normal leading-[0.95] tracking-wide text-foreground md:text-3xl">
             {p.title}
           </h1>
           <p className="font-sans text-sm font-normal leading-relaxed text-foreground/85">{p.logline}</p>

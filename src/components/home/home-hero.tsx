@@ -29,13 +29,14 @@ export function HomeHero({ className }: HomeHeroProps) {
       >
         <div className="space-y-3 text-center sm:text-left">
           <div className="space-y-1">
-            <h1 id="home-hero-title" className="font-display text-[1.85rem] font-medium tracking-tight text-foreground md:text-[2.1rem]">
+            <h1
+              id="home-hero-title"
+              className="font-logo text-[1.85rem] font-normal leading-[0.95] tracking-wide text-foreground md:text-[2.1rem]"
+            >
               {project.title}
             </h1>
             <p className="font-sans text-xs text-muted-foreground md:text-[0.8125rem]">{project.genre}</p>
           </div>
-
-          <p className="font-sans text-[0.9375rem] leading-[1.7] text-foreground/90 md:text-[15px]">{project.logline}</p>
         </div>
 
         <Link

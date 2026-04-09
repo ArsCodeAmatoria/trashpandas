@@ -3,6 +3,7 @@
 import { useId, useState } from "react";
 import { AspectFrame } from "@/components/media/aspect-frame";
 import { AspectToggle } from "@/components/media/aspect-toggle";
+import { ImageLightbox } from "@/components/media/image-lightbox";
 import type { AspectRatioPreset } from "@/lib/aspect";
 import { cn } from "@/lib/utils";
 
@@ -36,6 +37,7 @@ export function ExhibitionStillPlate({
   const [ratio, setRatio] = useState<AspectRatioPreset>("16:9");
   const [failed16, setFailed16] = useState(false);
   const [failed21, setFailed21] = useState(false);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
 
   const src = ratio === "16:9" ? image16x9 : image2x1;
   const failed = ratio === "16:9" ? failed16 : failed21;
@@ -57,12 +59,26 @@ export function ExhibitionStillPlate({
       <AspectFrame ratio={ratio} variant="media" elevated mat>
         <div className="relative h-full min-h-0 w-full">
           {!failed ? (
-            <img
-              src={src}
-              alt={`${subjectName} — ${ratioLabel} reference plate`}
-              className="absolute inset-0 h-full w-full object-cover object-center"
-              onError={() => (ratio === "16:9" ? setFailed16(true) : setFailed21(true))}
-            />
+            <>
+              <img
+                src={src}
+                alt={`${subjectName} — ${ratioLabel} reference plate`}
+                className="absolute inset-0 h-full w-full object-cover object-center"
+                onError={() => (ratio === "16:9" ? setFailed16(true) : setFailed21(true))}
+              />
+              <div
+                className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-t from-foreground/[0.12] via-transparent to-transparent opacity-70"
+                aria-hidden
+              />
+              <button
+                type="button"
+                className="absolute inset-0 z-[2] m-0 cursor-zoom-in border-0 bg-transparent p-0 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                aria-haspopup="dialog"
+                aria-expanded={lightboxOpen}
+                aria-label={`View full size — ${subjectName} (${ratioLabel})`}
+                onClick={() => setLightboxOpen(true)}
+              />
+            </>
           ) : null}
           {failed ? (
             <div
@@ -75,12 +91,17 @@ export function ExhibitionStillPlate({
               <span className="page-label text-[0.55rem] opacity-60">Image unavailable</span>
             </div>
           ) : null}
-          <div
-            className="pointer-events-none absolute inset-0 bg-gradient-to-t from-foreground/[0.12] via-transparent to-transparent opacity-70"
-            aria-hidden
-          />
         </div>
       </AspectFrame>
+
+      {!failed ? (
+        <ImageLightbox
+          open={lightboxOpen}
+          onOpenChange={setLightboxOpen}
+          src={src}
+          alt={`${subjectName} — ${ratioLabel} reference plate (full size)`}
+        />
+      ) : null}
     </section>
   );
 }

@@ -655,7 +655,8 @@ export function HomeFlowerCreditsPlayer({ className }: { className?: string }) {
           <p className="page-label">Film</p>
           <h2 className="font-display text-lg font-medium tracking-tight text-foreground md:text-xl">Credits</h2>
           <p className="max-w-xl font-sans text-xs leading-relaxed text-muted-foreground">
-            End-credits roll for <span className="font-medium text-foreground/90">{project.title}</span>, based on a
+            End-credits roll for{" "}
+            <span className="font-logo font-normal tracking-wide text-foreground/90">{project.title}</span>, based on a
             story by {flowerCreditsCreatorName}, screenplay and songs by {flowerCreditsWriterName}. Music:{" "}
             <span className="font-medium text-foreground/90">{creditsSong.title}</span>.
           </p>
